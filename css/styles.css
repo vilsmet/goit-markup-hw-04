@@ -81,7 +81,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
 }
-.flex-right .logo-black {
+ .logo-black {
   color: #212121;
 }
 .footer .logo-white {
@@ -129,17 +129,31 @@ body {
   color: var(--accent1-color);
 }
 
-
+.icon {
+  margin-left: 12px;
+  margin-right: 12px;
+  border: 1px dashed #2a2a2a;
+  border-radius: 4px;
+  fill: #2a2a2a;
+}
 
 /* Hero*/
 .hero {
-  text-align: center;
-  background-color: var(--background-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  /* margin-bottom: 94px; */
- }
-
+    text-align: center;
+      background-color: var(--background-color);
+      padding-top: 200px;
+      padding-bottom: 200px;
+      max-width: 1600px;
+      height: 600px;
+      margin: 0 auto;
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero.jpg);
+      background-position: center;
+      background-size: cover;
+      background-color: rgba(196, 196, 196, 1);
+      text-align: center;
+      background-repeat: no-repeat;
+}
 
 
 .hero-title {
@@ -236,6 +250,7 @@ body {
   line-height: 1.144;
   text-transform: uppercase;
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .top .description {
