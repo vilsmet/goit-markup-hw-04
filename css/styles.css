@@ -7,6 +7,7 @@
   --button-color: #F5F4FA;
   --background-color: #2F303A;
   --button-active: #188CE8;
+  --button-social: rgba(33, 150, 243, 1)
 }
 
 /* Global*/
@@ -140,6 +141,7 @@ body {
   letter-spacing: 0.02em;
 }
  .link-gray {
+  fill: var(--secondary-text-color);
   color: var(--secondary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -165,52 +167,14 @@ body {
   border-radius: 4px;
   text-align: center;
 }
-.stop {
-  fill: red;
-}
+
 .icon {  
   margin: 25px 0;
 }
 
 
-/* .icon2 {
-    fill: rgba(175, 177, 184, 1);
-} */
-/* .social-f {
-  display: block;
-  text-align: center;
-  border: none;
-  width: 44px;
-  height: 44px;
-  color: #2a2a2a;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.social-f:hover {
-  background-color: rgba(33, 150, 243, 1);
-  cursor: pointer;
-}
-
-.social-icon-f {
-  display: block;
-  cursor: pointer;
-  padding: 12px;
-  fill: #FFFFFF;
-}
-
-.social-icon-f:hover {
-  fill: rgba(255, 255, 255, 1);
-} */
-
-
 
 .additional .item {
-  display: block;
-  width: 170px;
-  height: 92px;
-  border: 1px solid rgba(175, 177, 184, 1);
-  border-radius: 4px;
   flex-basis: calc((100% - 150px) / 6);
 }
 .additional .item2 {
@@ -218,19 +182,14 @@ body {
   text-align: center;
   fill: rgba(175, 177, 184, 1);
   padding: 16px 32px;
-  margin-top: -1px;
-  margin-left: -1px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
 }
-
-.additional .item:hover {
+.additional .item2:hover,
+.additional .item2:focus {
   fill: rgba(33, 150, 243, 1);
   border: 1px solid rgba(33, 150, 243, 1);
   cursor: pointer;
-}
-.additional .item2:hover {
-  fill: rgba(33, 150, 243, 1);
-  cursor: pointer;
-
 }
 .icon-set {
   display: flex;
@@ -240,30 +199,46 @@ body {
   align-items: center;
 }
 .social {
-  display: block
-  text-align: center;
-  border: none;
+  display: block;
   width: 44px;
   height: 44px;
-  color: #2a2a2a;
+  border: none;
   border-radius: 50%;
   background-color: transparent;
 }
-.social:hover {
-  background-color: rgba(33, 150, 243, 1);
+.social:hover,
+.social:focus {
+  background-color: var(--button-social);
   cursor: pointer;
-
-
 }
 .social-icon {
-  display: block;
-  cursor: pointer;
   padding: 12px;
-    fill: rgba(175, 177, 184, 1);
+  fill: rgba(175, 177, 184, 1);
 }
-.social-icon:hover {
-    fill: rgba(255, 255, 255, 1);
+.social-icon:hover,
+.social-icon:focus {
+    fill: var(--accent2-color);
 }
+
+.social-f {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.social-f:hover,
+.social-f:focus {
+    background-color: var(--button-social);
+    cursor: pointer;
+}
+.social-icon-f {
+  fill: var(--accent2-color);
+  padding: 12px;
+}
+
+
 
 /* Hero*/
 .hero {
@@ -462,7 +437,7 @@ body {
 .button-gray:focus {
   background-color: var(--accent1-color);
   color: var(--accent2-color);
-  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer*/
@@ -551,32 +526,7 @@ body {
   margin-top: 12px;
   margin-bottom: 20px;
 }
-.social-f {
-  display: block; 
-  text-align: center;
-  border: none;
-  width: 44px;
-  height: 44px;
-  color: #2a2a2a;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+.port .shadow:hover,
+.port .shadow:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
-
-.social-f:hover {
-  background-color: rgba(33, 150, 243, 1);
-  cursor: pointer;
-}
-
-.social-icon-f {
-  display: block;
-  cursor: pointer;
-  padding: 12px 12px 12px 12px;
-  fill: #FFFFFF;
-}
-
-.social-icon-f:hover {
-  fill: rgba(255, 255, 255, 1);
-}
-
-
-
