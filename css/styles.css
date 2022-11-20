@@ -144,6 +144,8 @@ body {
 /* Icons */
 
  .link-gray {
+  display: flex;
+  align-items: center;
   fill: var(--secondary-text-color);
   color: var(--secondary-text-color);
   text-decoration: none;
