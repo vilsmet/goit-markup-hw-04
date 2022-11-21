@@ -18,7 +18,7 @@
 
 <body>
     <!--Header-->
-    <header>
+    <header class="header">
         <div class="container flex center">
             <a href="" class="logo-common logo-black"><span class="logo-highlight">Web</span>Studio</a>
             <nav class="flex-right">
@@ -52,17 +52,17 @@
     </header>
 
     <!--Main Block-->
-    <main class="main">
-        <div class="hero">
-            <h1 class="hero-title">Ефективні рішення для <br /> вашого бізнесу</h1>
-            <button class="button-blue" type="button">
-                Замовити послугу
-            </button>
-        </div>
-        <!--Main titles-->
-        <section class="section container">
+    <main>
+        <section class="hero-section">
+            <div class="hero">
+                <h1 class="hero-title">Ефективні рішення для <br /> вашого бізнесу</h1>
+                <button class="button-blue" type="button">Замовити послугу</button>
+            </div>
+        </section>
 
-            <div class="top">
+        <!--Main titles-->
+        <section class="section">
+            <div class="top container">
                 <h2 class="section-title-invisible">Наш підхід</h2>
                 <ul class="list card-set">
                     <li class="item">
@@ -109,9 +109,8 @@
                 </ul>
             </div>
 
-
             <!--About work-->
-            <div class="bottom">
+            <div class="bottom container">
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="list card-set">
                     <li class="item"><img src="images/a1.jpg" alt="HTML code typing" width="370" class="box"></li>
@@ -122,8 +121,8 @@
         </section>
 
         <!--Staff-->
-
-        <section class="section staff bottom container">
+        <section class="section staff">
+            <div class="bottom container">
             <h2 class="section-title">Наша команда</h2>
             <ul class="list card-set">
                 <li class="item">
@@ -275,8 +274,12 @@
                     </div>
                 </li>
             </ul>
+            </div>
         </section>
-        <section class="section container additional">
+
+        <!--Customers-->
+        <section class="section">
+            <div class="container additional">
             <h2 class="section-title">Постійні клієнти</h2>
             <ul class="list card-set">
                 <li>
@@ -322,14 +325,13 @@
                     </a>
                 </li>
             </ul>
+            </div>
         </section>
-
-
     </main>
     <!--Footer-->
     <footer class="footer">
         <div class="container flex">
-        <div>
+            <div>
             <a href="" class="logo-common logo-white"><span class="logo-highlight">Web</span>Studio</a>
             <address>
                 <p class="street item">м. Київ пр-т Лесі Українки, 26</p>
@@ -339,8 +341,8 @@
                     <li class="item"><a href="tel:+380961111111" class="address-contact">+38 096 111 11 11</a></li>
                 </ul>
             </address>
-        </div>
-        <div class="right">
+            </div>
+            <div class="right">
         <h2 class="right-below">Приєднуйтеся</h2>
         <ul class="list icon-set">
             <li>
@@ -372,7 +374,7 @@
                 </a>
             </li>
         </ul>
-        </div>
+            </div>
         </div>
     </footer>
 </body>
