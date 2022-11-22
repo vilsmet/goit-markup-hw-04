@@ -438,7 +438,10 @@ body {
 }
 
 .additional .item2 {
+  display: block;
   padding: 16px 32px;
+  margin-left: -1px;
+  margin-top: -1px;
 }
 
 .additional .item:hover,
