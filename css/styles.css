@@ -230,7 +230,6 @@ body {
 .hero {
   background-color: var(--background-color);
   max-width: 1600px;
-  height: 600px;
   margin: 0 auto;
   text-align: center;
   padding-top: 200px;
@@ -260,9 +259,9 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.top {
+/* .top {
   padding-bottom: 94px;
-}
+} */
 
 .wrap {
   flex-wrap: wrap;
@@ -298,6 +297,11 @@ body {
 }
 .port .item {
   flex-basis: calc((100% - 60px) / 3);
+  display: block;
+}
+.port .item:hover,
+.port .item:focus {
+      box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -533,7 +537,4 @@ body {
 .port {
   margin-top: 50px;
   }
-.port .shadow:hover,
-.port .shadow:focus {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
-}
+
