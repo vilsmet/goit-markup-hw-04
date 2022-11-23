@@ -267,9 +267,9 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-/* .top {
-  padding-bottom: 94px;
-} */
+.bottom {
+  padding-top: 0px;
+}
 
 .wrap {
   flex-wrap: wrap;
